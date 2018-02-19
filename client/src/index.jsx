@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import GroceryList from './components/GroceryList.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,9 +15,19 @@ class App extends React.Component {
     }
   }
 
+  // addGroceryOnClick() {
+  //   var lastId = this.state.list[this.state.list.length - 1].id
+  //   this.setState({
+  //     list: this.state.list.push({
+  //       id: lastId++, 
+  //       quanity: $('#quantity-input').val(), 
+  //       decription: $('#description-input').val(),
+  //     })
+  //   });
+  // }
   
   render () {
-    return null;
+    return <div><GroceryList list={this.state.list} /></div>;
   }
 }
 

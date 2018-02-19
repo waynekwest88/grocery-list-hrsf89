@@ -3,12 +3,24 @@
 <head>
   <title>Hack Reactor Grocery List</title>
   <link rel="stylesheet" href="style.css">
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="main">
-  <img src="grocery-bags.png"></img>
-  <div id="app"></div>
-</div>
-<script type="text/javascript" src="bundle.js"></script>
+  <div id="main">
+    <img src="grocery-bags.png"></img>
+    <h1>Grocery List</h1>
+    <div id="description"> 
+      Decription: <input type="text" id="description-input">
+    </div>
+    <div id="quantity">
+      Quantity: <input type="text" id="quantity-input">
+    </div>
+    <div id="app"></div>
+  </div>
+  
+  <script type="text/javascript" src="bundle.js"></script>
 </body>
 </html>
